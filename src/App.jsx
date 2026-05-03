@@ -1,6 +1,7 @@
 
 import { useEffect, useRef, useState } from "react"
 import { motion } from "framer-motion"
+import SkillBridgePhone from "./SkillBridgePhone"
 
 function App() {
   const [lights, setLights] = useState([])
@@ -174,17 +175,7 @@ function App() {
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
           >
-            <div className="phone-screen">
-              <div className="phone-scroll-content">
-                <h3>SkillBridge</h3>
-                <p>Find your skill gaps. Get hired faster.</p>
-                <div className="mock-circle"></div>
-                <div className="mock-card"></div>
-                <div className="mock-card short"></div>
-                <div className="mock-card"></div>
-                <div className="mock-button">Get Started</div>
-              </div>
-            </div>
+            <SkillBridgePhone />
           </motion.div>
         </motion.div>
       </section>
