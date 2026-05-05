@@ -55,7 +55,7 @@ main {
 
   filter: blur(7px);
 
-  mix-blend-mode: screen;
+  mix-blend-mode: difference;
 }
 
 /* COMET TRAIL */
