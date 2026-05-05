@@ -40,7 +40,7 @@ main {
 
   pointer-events: none;
 
-  z-index: 30;
+  z-index: 0;
 
   transform: translate(-50%, -50%);
 
@@ -55,6 +55,24 @@ main {
 
   filter: blur(7px);
 
+  mix-blend-mode: screen;
+}
+
+.hero h1,
+.hero .hero-text,
+.hero .eyebrow,
+.journey-step h2,
+.journey-step span,
+.burn-reveal h2,
+.burn-reveal p,
+.burn-reveal .eyebrow,
+.cv-card h2,
+.cv-card > p,
+.cv-card .eyebrow,
+.cv-grid h3,
+.cv-grid p,
+footer p,
+footer a {
   mix-blend-mode: difference;
 }
 
@@ -113,8 +131,6 @@ main {
   justify-content: center;
 
   position: relative;
-
-  z-index: 5;
 }
 
 .eyebrow {
@@ -189,8 +205,6 @@ h1 {
   padding: 80px 56px;
 
   position: relative;
-
-  z-index: 4;
 }
 
 .journey-line {
@@ -227,8 +241,6 @@ h1 {
 
   background:
     rgba(255, 255, 255, 0.035);
-
-  backdrop-filter: blur(12px);
 
   position: relative;
 
@@ -987,8 +999,6 @@ button:hover {
   padding: 90px 56px;
 
   position: relative;
-
-  z-index: 5;
 }
 
 .cv-card {
@@ -1082,6 +1092,7 @@ footer a {
   background:
     rgba(5, 5, 5, 0.72);
 
+  -webkit-backdrop-filter: blur(18px);
   backdrop-filter: blur(18px);
 
   display: flex;
@@ -1298,7 +1309,6 @@ footer a {
 
 .hero-content {
   position: relative;
-  z-index: 3;
 }
 
 @keyframes heroGlow {
